@@ -25,12 +25,6 @@
                 <key>url</key>
                 <string>https://binaries.webex.com/WebexTeamsDesktop-MACOS-Gold/Webex.pkg</string>
             </dict>
-            <key>Processor</key>
-            <string>CurlDownload</string>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>EndOfCheckPhase</string>
         </dict>
     </array>
 </dict>
