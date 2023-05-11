@@ -1,4 +1,4 @@
-Identifier: com.example.chrome
+Identifier: com.chrome.chrome
 Description: Recipe to download and upload Chrome to Jamf
 Input:
   URL: https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
