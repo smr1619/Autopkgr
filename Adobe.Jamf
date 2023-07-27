@@ -16,8 +16,6 @@
 		<string>Install - %NAME%</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>JamfPolicyTemplateAllUsers.xml</string>
-		<key>SELF_SERVICE_DESCRIPTION</key>
-		<string>Adobe Acrobat Reader DC software is the free global standard for reliably viewing, printing, and commenting on PDF documents.</string>
 		<key>SELF_SERVICE_ICON</key>
 		<string>AdobeAcrobatReaderDC.png</string>
         <key>POLICY_TRIGGER</key>
@@ -38,16 +36,7 @@
 				<string>%CATEGORY%</string>
 			</dict>
 			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>predicate</key>
-				<string>%UPDATE_PREDICATE%</string>
-			</dict>
-			<key>Processor</key>
-			<string>StopProcessingIf</string>
+			<string>com.github.autopkg.jss.AddCategoryIfNotExists</string>
 		</dict>
 		<dict>
 			<key>Arguments</key>
