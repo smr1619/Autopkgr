@@ -1,6 +1,6 @@
 <dict>
     <key>Identifier</key>
-    <string>com.github.sryley.recipes.jamf.MicrosoftEdge</string>
+    <string>com.github.grahampugh.recipes.jamf.MicrosoftEdge</string>
     <key>Description</key>
     <string>Downloads and packages the latest version of Microsoft Edge for use with Jamf Pro.</string>
     <key>Input</key>
