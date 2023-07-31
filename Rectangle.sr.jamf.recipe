@@ -8,10 +8,10 @@
         <string>com.github.smr1619.Rectangle.sr.jamf.recipe</string>
         <key>Input</key>
         <dict>
-            <key>CATEGORY</key>
-            <string>Autopkgr_Files</string>
-            <key>NAME</key>
-            <string>Rectangle<string>
+              <key>CATEGORY</key>
+              <string>Autopkgr_Files</string>
+              <key>NAME</key>
+              <string>Rectangle<string>
         </dict>
         <key>MinimumVersion</key>
         <string>2.3</string>
