@@ -9,7 +9,9 @@
         <key>Input</key>
         <dict>
             <key>CATEGORY</key>
-            <string>Autopkgr-Files</string>
+            <string>Autopkgr_Files</string>
+            <key>NAME</key>
+            <string>Rectangle<string>
         </dict>
         <key>MinimumVersion</key>
         <string>2.3</string>
@@ -47,15 +49,6 @@
             <dict>
                 <key>Processor</key>
                 <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>predicate</key>
-                    <string>%UPDATE_PREDICATE%</string>
-                </dict>
-                <key>Processor</key>
-                <string>StopProcessingIf</string>
             </dict>
             <dict>
                 <key>Arguments</key>
