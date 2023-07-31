@@ -1,6 +1,6 @@
 <dict>
     <key>Identifier</key>
-    <string>com.github.grahampugh.recipes.jamf.MicrosoftEdge</string>
+    <string>https://github.com/smr1619/Autopkgr.git</string>
     <key>Description</key>
     <string>Downloads and packages the latest version of Microsoft Edge for use with Jamf Pro.</string>
     <key>Input</key>
