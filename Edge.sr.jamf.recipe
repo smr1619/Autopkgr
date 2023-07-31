@@ -11,7 +11,7 @@
 		<key>CATEGORY</key>
 		<string>Autpkgr-Files</string>
 		<key>NAME</key>
-		<string>Microsoft Edge</string>
+		<string>MicrosoftEdge</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
