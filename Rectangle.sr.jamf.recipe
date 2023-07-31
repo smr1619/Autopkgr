@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>Comment</key>
+<dict>
+	<key>Comment</key>
 	<string>Recipe automatically generated from com.github.novaksam.jss.GoogleChrome by JamfRecipeMaker</string>
 	<key>Identifier</key>
 	<string>com.github.smr1619.Rectangle.sr.jamf.recipe</string>
@@ -11,54 +11,32 @@
 		<key>CATEGORY</key>
 		<string>Autopkgr-Files</string>
 		<key>NAME</key>
-		<string>Rectanlge</string>
-        </dict>
-        <key>MinimumVersion</key>
-        <string>2.3</string>
-        <key>ParentRecipe</key>
-        <string>com.github.dataJAR-recipes.pkg.Rectangle</string>
-        <key>Process</key>
-        <array>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>category_name</key>
-                    <string>%CATEGORY%</string>
-                </dict>
-                <key>Processor</key>
-                <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>category_name</key>
-                    <string>%POLICY_CATEGORY%</string>
-                </dict>
-                <key>Processor</key>
-                <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>category_name</key>
-                    <string>%CATEGORY%</string>
-                </dict>
-                <key>Processor</key>
-                <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-            </dict>
-            <dict>
-                <key>Processor</key>
-                <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-            </dict>
-            <dict>
-                <key>Arguments</key>
-                <dict>
-                    <key>category_name</key>
-                    <string>Autopkgr-Files</string>
-                </dict>
-                <key>Processor</key>
-                <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-            </dict>
-        </array>
-    </dict>
+		<string>Rectangle</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.peetinc.download.Rectangle</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+	</array>
+</dict>
 </plist>
