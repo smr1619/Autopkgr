@@ -10,7 +10,6 @@
         <dict>
             <key>CATEGORY</key>
             <string>Autopkgr-Files</string>
-            ...
         </dict>
         <key>MinimumVersion</key>
         <string>2.3</string>
