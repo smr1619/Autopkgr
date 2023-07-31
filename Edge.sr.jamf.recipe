@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.grahampugh.recipes.jamf.MicrosoftEdge</string>
+	<string>com.github.rtrouton.jamf.microsoftedge</string>
 	<key>Process</key>
 	<array>
 		<dict>
