@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dict>
+    <key>Identifier</key>
+    <string>com.github.rtrouton.pkg.AdobeCreativeCloudInstallerUniversal</string>
+    <key>Description</key>
+    <string>Recipe to upload package to Jamf Pro and move it to the "test" category</string>
+    <key>ParentRecipe</key>
+    <string>com.github.rtrouton.pkg.AdobeCreativeCloudInstallerUniversal</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_category</key>
+                <string>Autopkgr-Files</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
