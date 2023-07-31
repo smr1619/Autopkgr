@@ -9,14 +9,14 @@
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Autpkgr-Files</string>
+		<string>Autopkgr-Files</string>
 		<key>NAME</key>
 		<string>MicrosoftEdge</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.beatlemike.jamf.microsoftedge</string>
+	<string>com.github.rtrouton.download.microsoftedge</string>
 	<key>Process</key>
 	<array>
 		<dict>
