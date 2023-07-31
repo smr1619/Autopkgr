@@ -2,16 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
-        <key>Description</key>
-        <string>Downloads the latest version and makes a pkg. Then, uploads the package to the Jamf Pro Server and creates a Self Service Policy and Smart Group.</string>
-        <key>Identifier</key>
-        <string>com.github.smr1619.Rectangle.sr.jamf.recipe</string>
-        <key>Input</key>
-        <dict>
-              <key>CATEGORY</key>
-              <string>Autopkgr_Files</string>
-              <key>NAME</key>
-              <string>Rectangle<string>
+        <key>Comment</key>
+	<string>Recipe automatically generated from com.github.novaksam.jss.GoogleChrome by JamfRecipeMaker</string>
+	<key>Identifier</key>
+	<string>com.github.smr1619.Chrome.sr.jamf.recipe</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Autopkgr-Files</string>
+		<key>NAME</key>
+		<string>Google Chrome</string>
         </dict>
         <key>MinimumVersion</key>
         <string>2.3</string>
