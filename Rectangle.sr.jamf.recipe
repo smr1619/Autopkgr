@@ -5,43 +5,23 @@
 	<key>Comment</key>
 	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
 	<key>Description</key>
-	<string>Downloads the latest version of Rectangle and creates a package. Then, uploads the package and category to the Jamf Pro Server.</string>
+	<string>Downloads the latest version of Rectangle and creates a package.</string>
 	<key>Identifier</key>
 	<string>com.github.smr1619.Rectangle.sr.jamf.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>Rectangle</string>
-		<key>CATEGORY</key>
-		<string>Autopkgr-Files</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.sryley.pkg.Rectangle</string>
+	<string>com.github.sryley.download.Rectangle</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Processor</key>
 			<string>AppPkgCreator</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%CATEGORY%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_category</key>
-				<string>%CATEGORY%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
 	</array>
 </dict>
