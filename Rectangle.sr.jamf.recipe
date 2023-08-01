@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recipe>
-    <identifier>com.github.smr1619.Rectangle.sr.jamf.recipe</identifier>
-    <description>Downloads the latest version of Rectangle from GitHub.</description>
-    <input>
-        <key>NAME</key>
-        <string>Rectangle</string>
-        <key>REPO_URL</key>
-        <string>https://github.com/rxhanson/Rectangle</string>
-        <key>CATEGORY</key>
-        <string>Autopkgr-Files</string>
-    </input>
-    <processor>downloadURLFromGit</processor>
-    <processor>unarchive</processor>
-    <processor>renamePath</processor>
-    <processor>versioner</processor>
-    <processor>AppPkgCreator</processor>
-    <processor>
-        <key>Arguments</key>
-        <dict>
-            <key>category_name</key>
-            <string>%CATEGORY%</string>
-        </dict>
-        <key>Processor</key>
-        <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-    </processor>
-    <processor>
-        <key>Arguments</key>
-        <dict>
-            <key>pkg_category</key>
-            <string>%CATEGORY%</string>
-        </dict>
-        <key>Processor</key>
-        <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-    </processor>
-</recipe>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+	<key>Identifier</key>
+	<string>com.github.smr1619.Rectangle.sr.jamf.recipe</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Autopkgr-Files</string>
+		<key>NAME</key>
+		<string>Rectangle</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.grahampugh.recipes.jamf.Rectangle</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
