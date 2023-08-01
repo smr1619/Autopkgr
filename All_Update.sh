@@ -6,14 +6,13 @@ download_dir="/users/desktop/monthly"
 # Set the list of AutoPkg recipes to run
 recipes=(
     "com.github.smr1619.Rectangle.sr.jamf.recipe"
-    "com.github.autopkg.pkg.AdobeReader"
-    "com.github.novaksam.pkg.AdobeAcrobatDCUpdate"
-    "com.github.autopkg.grahampugh-recipes.jamf.Firefox-pkg-upload"
-    "com.github.rtrouton.jamf.citrixworkspaceuniversal"
-    "com.github.dataJAR-recipes.download.boxdrive"
-    "com.github.grahampugh.recipes.jamf.MicrosoftEdge"
-    "com.github.rtrouton.pkg.AdobeCreativeCloudInstallerUniversal"
-    "com.github.sryley.download.Webex"
+    "com.github.smr1619.AdobeCC.sr.jamf.recipe"
+    "com.github.smr1619.AdobeAcrobat.sr.jamf.recipe"
+    "com.github.smr1619.AdobeReader.sr.jamf.recipe"
+    "com.github.smr1619.Chrome.sr.jamf.recipe"
+    "com.github.smr1619.Edge.sr.jamf.recipe"
+    "com.github.smr1619.firefox.sr.jamf.recipe"
+    "com.github.smr1619.zoom.sr.jamf.recipe"
 )
 
 # Check if AutoPkg is installed
