@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.sryley.download.Rectangle</string>
+	<string>com.github.smr1619.Chrome.sr.jamf.recipe</string>
 	<key>Process</key>
 	<array>
 		<dict>
