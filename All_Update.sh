@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the download directory
-download_dir="/users/desktop/monthly"
+download_dir="/users/desktop/Autopkg_Files"
 
 # Set the list of AutoPkg recipes to run
 recipes=(
