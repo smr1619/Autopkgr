@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.grahampugh.recipes.jamf.Rectangle</string>
+	<string>com.github.data-JAR-recipes.pkg.Rectangle</string>
 	<key>Process</key>
 	<array>
 		<dict>
