@@ -5,7 +5,7 @@ download_dir="/users/desktop/monthly"
 
 # Set the list of AutoPkg recipes to run
 recipes=(
-    "com.github.rtrouton.pkg.googlechromeuniversal"
+    "com.github.smr1619.Rectangle.sr.jamf.recipe"
     "com.github.autopkg.pkg.AdobeReader"
     "com.github.novaksam.pkg.AdobeAcrobatDCUpdate"
     "com.github.autopkg.grahampugh-recipes.jamf.Firefox-pkg-upload"
