@@ -32,7 +32,7 @@
                 <key>Arguments</key>
                 <dict>
                     <key>policy_name</key>
-                    <string>test_policy</string>
+                    <string>test</string>
                 </dict>
                 <key>Processor</key>
                 <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
