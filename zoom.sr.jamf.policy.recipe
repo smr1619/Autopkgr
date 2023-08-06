@@ -32,15 +32,6 @@
             <key>Arguments</key>
             <dict>
                 <key>policy_name</key>
-                <string>ZoomTest</string>
-            </dict>
-            <key>Processor</key>
-            <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
-        </dict>
-        <dict>
-            <key>Arguments</key>
-            <dict>
-                <key>policy_name</key>
                 <string>test_policy</string>
                 <key>package_name</key>
                 <string>Zoom</string>
