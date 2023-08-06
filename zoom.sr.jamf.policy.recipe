@@ -32,11 +32,11 @@
             <key>Arguments</key>
             <dict>
                 <key>policy_name</key>
-                <string>ZoomTest</string>
+                <string>Update Zoom</string>
                 <key>package_name</key>
                 <string>Zoom</string>
                 <key>policy_template</key>
-                <string>Policy_Template</string>
+                <string>Update Zoom</string>
             </dict>
             <key>Processor</key>
             <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyPackageUploader</string>
