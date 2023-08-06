@@ -3,7 +3,7 @@
 	<key>Comment</key>
 	<string>Recipe automatically generated from com.github.jss-recipes.jss.Zoom by JamfRecipeMaker</string>
 	<key>Identifier</key>
-	<string>com.github.smr1619.zoom.sr.jamf.policy.recipe</string>
+	<string>com.github.smr1619.zoom.sr.jamf.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
