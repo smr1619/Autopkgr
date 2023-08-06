@@ -36,7 +36,7 @@
                 <key>package_name</key>
                 <string>Zoom</string>
                 <key>policy_template</key>
-                <string>Update Zoom</string>
+                <string>Policy_Template</string>
             </dict>
             <key>Processor</key>
             <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyPackageUploader</string>
