@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 	<dict>
 		<key>Comment</key>
 		<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
 		<key>Identifier</key>
-		<string> com.github.smr1619.zoom.sr.jamf.policy.recipe</string>
+		<string>com.github.smr1619.zoom.sr.jamf.policy.recipe</string>
 		<key>Input</key>
 		<dict>
 			<key>CATEGORY</key>
@@ -16,7 +17,7 @@
 			<key>POLICY_NAME</key>
 			<string>Update Zoom %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
-			<string>/Users/Shane.Ryley/Library/AutoPkg/RecipeRepos/response_1691348121681.xml</string>
+			<string>JamfPolicyTemplate.xml</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
@@ -36,6 +37,8 @@
 			<dict>
 				<key>Arguments</key>
 				<dict>
+					<key>icon</key>
+					<string>%NAME%.png</string>
 					<key>policy_name</key>
 					<string>%POLICY_NAME%</string>
 					<key>policy_template</key>
