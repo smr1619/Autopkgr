@@ -11,7 +11,7 @@
         <key>CATEGORY</key>
         <string>Autopkgr_Uploads</string>
         <key>NAME</key>
-        <string>zoom.us</string>
+        <string>zoom</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.3</string>
@@ -32,7 +32,7 @@
             <key>Arguments</key>
             <dict>
                 <key>policy_name</key>
-                <string>test_policy</string>
+                <string>ZoomTest</string>
                 <key>package_name</key>
                 <string>Zoom</string>
             </dict>
