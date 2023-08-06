@@ -14,7 +14,7 @@
 			<key>POLICY_CATEGORY</key>
 			<string>Testing</string>
 			<key>POLICY_NAME</key>
-			<string>Install Latest %NAME%</string>
+			<string>Update Zoom %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
 			<string>/Users/Shane.Ryley/Library/AutoPkg/RecipeRepos/response_1691348121681.xml</string>
 		</dict>
@@ -36,8 +36,6 @@
 			<dict>
 				<key>Arguments</key>
 				<dict>
-					<key>icon</key>
-					<string>%NAME%.png</string>
 					<key>policy_name</key>
 					<string>%POLICY_NAME%</string>
 					<key>policy_template</key>
