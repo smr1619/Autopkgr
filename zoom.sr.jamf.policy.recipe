@@ -10,7 +10,7 @@
             <key>CATEGORY</key>
             <string>Autopkgr_Uploads</string>
             <key>NAME</key>
-            <string>zoom.us</string>
+            <string>zoom</string>
         </dict>
         <key>MinimumVersion</key>
         <string>2.3</string>
