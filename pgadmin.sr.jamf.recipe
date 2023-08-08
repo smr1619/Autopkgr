@@ -1,33 +1,42 @@
-<recipe>
-  <identifier>com.github.smr1619.pgadmin.sr.jamf.recipe</identifier>
-  <description>Downloads the latest version of pgAdmin 4 for macOS.</description>
-  <input>
-    <key>NAME</key>
-    <string>pgAdmin 4</string>
-    <key>URL</key>
-    <string>https://www.pgadmin.org/download/pgadmin-4-macos/</string>
-  </input>
-  <process>
-    <step>
-      <script>#!/bin/bash
-      # Get the download URL for the latest version of pgAdmin 4 for macOS
-      url=$(curl -s https://www.pgadmin.org/download/pgadmin-4-macos/ | grep -o 'https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v[0-9]\.[0-9]\.[0-9]/macos/pgadmin4-[0-9]\.[0-9]\.[0-9]-[0-9]\.dmg')
-      # Download the latest version of pgAdmin 4 for macOS
-      curl -L -o pgadmin4.dmg $url
-      # Output the path to the downloaded file
-      echo "$PWD/pgadmin4.dmg"
-      </script>
-      <description>Download the latest version of pgAdmin 4 for macOS.</description>
-    </step>
-  </process>
-  <output>
-    <array>
-      <dict>
-        <key>NAME</key>
-        <string>pgadmin4.dmg</string>
-        <key>PATH</key>
-        <string>pgadmin4.dmg</string>
-      </dict>
-    </array>
-  </output>
-</recipe>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+	<key>Identifier</key>
+	<string>com.github.smr1619.pgadmin.sr.jamf.recipee</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Autopkgr_Uploads</string>
+		<key>NAME</key>
+		<string>pgAdmin4</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.3</string>
+	<key>ParentRecipe</key>
+	<string>com.github.dataJAR.-recipes.download.pgadmin4</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+		</dict>
+	</array>
+</dict>
+</plist>
