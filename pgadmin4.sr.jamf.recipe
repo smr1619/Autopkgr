@@ -5,7 +5,7 @@
 	<key>Comment</key>
 	<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
 	<key>Identifier</key>
-	<string>com.github.smr1619.pgadmin.sr.jamf.recipe</string>
+	<string>com.github.smr1619.pgadmin4.sr.jamf.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.dataJAR.-recipes.download.pgadmin4</string>
+	<string>com.github.rtrouton.pkg.Firefox</string>
 	<key>Process</key>
 	<array>
 		<dict>
