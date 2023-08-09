@@ -3,7 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>This recipe uploads a package to your Jamf Pro Server/Distribution Point and creates/updates the policy that deploys it.</string>
+	<string>This recipe takes the Zoom pkg installer for IT, uploads it to your Jamf Pro 
+Server/Distribution Point, and creates/updates the policy that deploys it.
+
+The server/share details must be set using variables set in the environment or specified in your override
+(see https://github.com/grahampugh/jamf-upload/wiki/JamfUploader-AutoPkg-Processors).
+
+The grahampugh-recipes and MLBZ521-recipes repos are required.
+
+Note that the (Package) CATEGORY, GROUP_NAME, and POLICY_CATEGORY specified by the Input 
+variables must each exist on the server, otherwise the recipe will fail. The value for SITE is 
+requested in the Input dictionary so that it may be used within the POLICY_TEMPLATE specified.
+</string>
 	<key>Identifier</key>
 	<string>com.github.smr1619.zoom.sr.jamf.policy.recipe</string>
 	<key>Input</key>
@@ -13,9 +24,11 @@
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>%NAME% Update Zoom</string>
+		<string>%SITE% %NAME% Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
+		<key>SITE</key>
+		<string>IAML</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.0</string>
@@ -30,6 +43,15 @@
 			<dict>
 				<key>pkg_category</key>
 				<string>%CATEGORY%</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>StopProcessingIf</string>
+			<key>Arguments</key>
+			<dict>
+				<key>predicate</key>
+				<string>pkg_uploaded == False</string>
 			</dict>
 		</dict>
 		<dict>
