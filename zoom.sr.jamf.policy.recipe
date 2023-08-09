@@ -2,48 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+	<key>Description</key>
+	<string>This recipe uploads a package to your Jamf Pro Server/Distribution Point and creates/updates the policy that deploys it.</string>
 	<key>Identifier</key>
 	<string>com.github.smr1619.zoom.sr.jamf.policy.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
 		<string>Autopkgr_Uploads</string>
-		<key>NAME</key>
-		<string>zoom.us</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>Update Zoom</string>
+		<string>%SITE% %NAME% Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
 	<key>MinimumVersion</key>
-	<string>2.3</string>
+	<string>2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.homebysix.pkg.Zoom</string>
+	<string>com.example.pkg.recipe</string>
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%CATEGORY%</string>
-			</dict>
 			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-		</dict>
-		<dict>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_category</key>
 				<string>%CATEGORY%</string>
 			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
 		<dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>policy_name</key>
@@ -53,8 +44,17 @@
 				<key>replace_policy</key>
 				<string>True</string>
 			</dict>
+		</dict>
+		<dict>
 			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfAddPackageToPolicy</string>
+			<key>Arguments</key>
+			<dict>
+				<key>policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>package_name</key>
+				<string>%NAME%</string>
+			</dict>
 		</dict>
 	</array>
 </dict>
