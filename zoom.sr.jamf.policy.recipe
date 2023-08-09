@@ -13,7 +13,7 @@
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>%SITE% %NAME% Update Zoom</string>
+		<string>%NAME% Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
