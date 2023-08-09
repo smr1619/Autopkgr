@@ -45,17 +45,6 @@
 				<string>True</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfAddPackageToPolicy</string>
-			<key>Arguments</key>
-			<dict>
-				<key>policy_name</key>
-				<string>%POLICY_NAME%</string>
-				<key>package_name</key>
-				<string>%NAME%</string>
-			</dict>
-		</dict>
 	</array>
 </dict>
 </plist>
