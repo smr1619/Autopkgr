@@ -20,7 +20,7 @@
 	<key>MinimumVersion</key>
 	<string>2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.example.pkg.recipe</string>
+	<string>com.github.homebysix.pkg.Zoom</string>
 	<key>Process</key>
 	<array>
 		<dict>
