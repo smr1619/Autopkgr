@@ -18,8 +18,6 @@
 		<string>Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
-		<key>SITE</key>
-		<string>LPL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
