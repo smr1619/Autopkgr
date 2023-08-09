@@ -1,53 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>dentifier>com.github.smr1619.zoom.sr.jamf.policy.recipe</identifier>
-    <description>Recipe to upload Zoom package and create/update policy with smart group</description>
-    <input>
-        <key>CATEGORY</key>
-        <string>Autopkgr_Uploads</string>
-        <key>NAME</key>
-        <string>Zoom</string>
-        <key>POLICY_CATEGORY</key>
-        <string>%CATEGORY%</string>
-        <key>POLICY_NAME</key>
-        <string>Update Zoom</string>
-        <key>POLICY_TEMPLATE</key>
-        <string>Policy_Test.xml</string>
-        <key>SMART_GROUP_NAME</key>
-        <string>Monthly Patching - Zoom Update</string>
-    </input>
-    <process>
-        <dict>
-            <key>Processor</key>
-            <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_category</key>
-                <string>%CATEGORY%</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
-            <key>Arguments</key>
-            <dict>
-                <key>policy_name</key>
-                <string>%POLICY_NAME%</string>
-                <key>policy_template</key>
-                <string>%POLICY_TEMPLATE%</string>
-                <key>replace_policy</key>
-                <string>True</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>com.github.grahampugh.jamf-upload.processors/JamfSmartGroupAdder</string>
-            <key>Arguments</key>
-            <dict>
-                <key>smart_group_name</key>
-                <string>%SMART_GROUP_NAME%</string>
-            </dict>
-        </dict>
-    </process>
-</recipe>
+<dict>
+	<key>Description</key>
+	<string>This recipe uploads a package to your Jamf Pro Server/Distribution Point and creates/updates the policy that deploys it.</string>
+	<key>Identifier</key>
+	<string>com.github.smr1619.zoom.sr.jamf.policy.recipe</string>
+	<key>Input</key>
+	<dict>
+		<key>CATEGORY</key>
+		<string>Autopkgr_Uploads</string>
+		<key>POLICY_CATEGORY</key>
+		<string>%CATEGORY%</string>
+		<key>POLICY_NAME</key>
+		<string>%NAME% Update Zoom</string>
+		<key>POLICY_TEMPLATE</key>
+		<string>Policy_Test.xml</string>
+		<key>SMART_GROUP_NAME</key>
+		<string>Monthly Patching - Zoom Update</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>2.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.homebysix.pkg.Zoom</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			<key>Arguments</key>
+			<dict>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+			<key>Arguments</key>
+			<dict>
+				<key>policy_name</key>
+				<string>%POLICY_NAME%</string>
+				<key>policy_template</key>
+				<string>%POLICY_TEMPLATE%</string>
+				<key>replace_policy</key>
+				<string>True</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfSmartGroupAdder</string>
+			<key>Arguments</key>
+			<dict>
+				<key>smart_group_name</key>
+				<string>%SMART_GROUP_NAME%</string>
+				<key>policy_name</key>
+				<string>%POLICY_NAME%</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
