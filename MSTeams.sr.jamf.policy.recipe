@@ -47,7 +47,7 @@
 				<key>policy_template</key>
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
-				<string>True</string>
+				<string>False</string>
 				<key>trust_info</key>
 				<false/>
 			</dict>
