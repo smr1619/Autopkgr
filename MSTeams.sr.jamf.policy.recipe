@@ -10,10 +10,10 @@
 	<dict>
 		<key>CATEGORY</key>
 		<string>Autopkgr_Uploads</string>
-		<key>POLICY_CATEGORY</key>
-		<string>%CATEGORY%</string>
+		<key>NAME</key>
+		<string>Microsoft Teams</string>
 		<key>POLICY_NAME</key>
-		<string>%NAME% Update MS Teams</string>
+		<string>Update MS Teams</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
@@ -24,26 +24,24 @@
 	<key>Process</key>
 	<array>
 		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category_name</key>
+				<string>%CATEGORY%</string>
+			</dict>
 			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+		</dict>
+		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_category</key>
 				<string>%CATEGORY%</string>
 			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>StopProcessingIf</string>
-			<key>Arguments</key>
-			<dict>
-				<key>predicate</key>
-				<string>pkg_uploaded == False</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>policy_name</key>
@@ -53,6 +51,8 @@
 				<key>replace_policy</key>
 				<string>True</string>
 			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
 		</dict>
 	</array>
 </dict>
