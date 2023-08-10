@@ -13,11 +13,9 @@
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>%SITE% %NAME% Update MS Teams</string>
+		<string>%NAME% Update MS Teams</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
-		<key>SITE</key>
-		<string>LPL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
