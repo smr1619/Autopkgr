@@ -11,16 +11,16 @@
 		<key>CATEGORY</key>
 		<string>Autopkgr_Uploads</string>
 		<key>NAME</key>
-		<string>zoom.us</string>
+		<string>Microsoft_Teams</string>
 		<key>POLICY_NAME</key>
-		<string>Update Zoom</string>
+		<string>Update MSTeams</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
 	<key>ParentRecipe</key>
-	<string>com.github.homebysix.pkg.Zoom</string>
+	<string>com.github.beatlemike.jamf.MicrosoftTeams</string>
 	<key>Process</key>
 	<array>
 		<dict>
