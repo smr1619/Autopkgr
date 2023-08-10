@@ -24,9 +24,6 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>pkg_category</key>
-				<string>%CATEGORY%</string>
-			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
