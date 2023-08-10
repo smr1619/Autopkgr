@@ -9,13 +9,11 @@
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>1-Monthly Patching</string>
+		<string>Autopkgr_Uploads</string>
 		<key>NAME</key>
 		<string>zoom.us</string>
-		<key>POLICY_NAME</key>
-		<string>Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>Policy_Test.xml</string>
+		<string>policy_template.xml</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -45,7 +43,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>policy_name</key>
-				<string>%POLICY_NAME%</string>
+				<string>Update Zoom</string>
 				<key>policy_template</key>
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
