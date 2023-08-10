@@ -2,44 +2,56 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Comment</key>
-	<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
-	<key>Identifier</key>
-	<string>com.github.smr1619.MSTeams.sr.jamf.policy.recipe</string>
-	<key>Input</key>
-	<dict>
-		<key>NAME</key>
-		<string>Microsoft_Teams</string>
-		<key>POLICY_NAME</key>
-		<string>Update MSTeams</string>
-		<key>POLICY_TEMPLATE</key>
-		<string>Policy_Test.xml</string>
-	</dict>
-	<key>MinimumVersion</key>
-	<string>2.3</string>
-	<key>ParentRecipe</key>
-	<string>com.github.beatlemike.jamf.MicrosoftTeams</string>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>policy_name</key>
-				<string>%POLICY_NAME%</string>
-				<key>policy_template</key>
-				<string>%POLICY_TEMPLATE%</string>
-				<key>replace_policy</key>
-				<string>True</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
-		</dict>
-	</array>
+    <key>Comment</key>
+    <string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+    <key>Identifier</key>
+    <string>com.github.smr1619.MSTeams.sr.jamf.policy.recipe</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Microsoft_Teams</string>
+        <key>POLICY_NAME</key>
+        <string>Update MSTeams</string>
+        <key>POLICY_TEMPLATE</key>
+        <string>Policy_Test.xml</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>2.3</string>
+    <key>ParentRecipe</key>
+    <string>com.github.beatlemike.jamf.MicrosoftTeams</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>category_name</key>
+                <string>%CATEGORY%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_category</key>
+                <string>%CATEGORY%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+        </dict>
+        <dict>
+            <key>Arguments</key>
+            <dict>
+                <key>policy_name</key>
+                <string>%POLICY_NAME%</string>
+                <key>policy_template</key>
+                <<string>%POLICY_TEMPLATE%</string>
+                <key>replace_policy</key>
+                <<string>True</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+        </dict>
+    </array>
 </dict>
 </plist>
