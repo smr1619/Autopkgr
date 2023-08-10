@@ -27,7 +27,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>category_name</key>
-				<string>%CATEGORY%</string>
+				<string>1-Monthly Patching</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
@@ -36,7 +36,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_category</key>
-				<string>%CATEGORY%</string>
+				<string>1-Monthly Patching</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
@@ -45,9 +45,9 @@
 			<key>Arguments</key>
 			<dict>
 				<key>policy_name</key>
-				<string>%POLICY_NAME%</string>
+				<string>Update Zoom</string>
 				<key>policy_template</key>
-				<string>%POLICY_TEMPLATE%</string>
+				<string>Policy_Test.xml</string>
 				<key>replace_policy</key>
 				<string>True</string>
 				<key>trust_info</key>
