@@ -13,7 +13,7 @@
 		<key>NAME</key>
 		<string>microsoft teams</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>policy_test.xml</string>
+		<string>Policy_Test.xml</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
