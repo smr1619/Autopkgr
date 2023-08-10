@@ -8,8 +8,6 @@
 	<string>com.github.smr1619.MSTeams.sr.jamf.policy.recipe</string>
 	<key>Input</key>
 	<dict>
-		<key>CATEGORY</key>
-		<string>Autopkgr_Uploads</string>
 		<key>NAME</key>
 		<string>Microsoft_Teams</string>
 		<key>POLICY_NAME</key>
@@ -23,15 +21,6 @@
 	<string>com.github.beatlemike.jamf.MicrosoftTeams</string>
 	<key>Process</key>
 	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%CATEGORY%</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-		</dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
