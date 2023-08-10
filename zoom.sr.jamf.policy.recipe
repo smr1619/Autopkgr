@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>1-Monthly Patching</string>
+		<string>Autopkgr_Uploads</string>
 		<key>NAME</key>
 		<string>zoom.us</string>
 		<key>POLICY_NAME</key>
@@ -26,7 +26,7 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>category_name</key>
+				<key>1-Monthly Patching</key>
 				<string>%CATEGORY%</string>
 			</dict>
 			<key>Processor</key>
