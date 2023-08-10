@@ -43,7 +43,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>policy_name</key>
-				<string>Update Zoom</string>
+				<string>Update MSTeams</string>
 				<key>policy_template</key>
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
