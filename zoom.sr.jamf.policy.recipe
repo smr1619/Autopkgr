@@ -13,7 +13,7 @@
 			<key>NAME</key>
 			<string>zoom.us</string>
 			<key>POLICY_CATEGORY</key>
-			<string>Upate MS Teams</string>
+			<string>Testing</string>
 			<key>POLICY_NAME</key>
 			<string>Install Latest %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
@@ -42,15 +42,6 @@
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>predicate</key>
-					<string>%UPDATE_PREDICATE%</string>
-				</dict>
-				<key>Processor</key>
-				<string>StopProcessingIf</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
