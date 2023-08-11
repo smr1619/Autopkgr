@@ -13,9 +13,9 @@
 		<key>NAME</key>
 		<string>zoom.us</string>
 		<key>POLICY_CATEGORY</key>
-		<string>Test</string>
+		<string>1-Monthly Patching</string>
 		<key>POLICY_NAME</key>
-		<string>Update Zoom</string>
+		<string>Update Zoom 2</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
