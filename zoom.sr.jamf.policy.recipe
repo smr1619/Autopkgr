@@ -15,7 +15,7 @@
 		<key>POLICY_CATEGORY</key>
 		<string>Test</string>
 		<key>POLICY_NAME</key>
-		<string>Install Latest %NAME%</string>
+		<string>Install Latest zoom.us</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
@@ -49,7 +49,7 @@
 				<key>policy_name</key>
 				<string>%POLICY_NAME%</string>
 				<key>policy_template</key>
-				<string>%POLICY_TEMPLATE%</string>
+				<string>Policy_Test.xml</string>
 				<key>replace_policy</key>
 				<string>True</string>
 			</dict>
