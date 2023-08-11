@@ -18,16 +18,6 @@
 			<string>Install Latest %NAME%</string>
 			<key>POLICY_TEMPLATE</key>
 			<string>JamfPolicyTemplate.xml</string>
-			<key>SELF_SERVICE_DESCRIPTION</key>
-			<string>The Zoom app provides cloud-hosted video conferencing, plus online meetings and group messaging.</string>
-			<key>SELF_SERVICE_DISPLAY_NAME</key>
-			<string>Install Latest %NAME%</string>
-			<key>SELF_SERVICE_ICON</key>
-			<string>%NAME%.png</string>
-			<key>TESTING_GROUP_NAME</key>
-			<string>Testing</string>
-			<key>UPDATE_PREDICATE</key>
-			<string>pkg_uploaded == False</string>
 		</dict>
 		<key>MinimumVersion</key>
 		<string>2.3</string>
@@ -40,15 +30,6 @@
 				<dict>
 					<key>category_name</key>
 					<string>%CATEGORY%</string>
-				</dict>
-				<key>Processor</key>
-				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>category_name</key>
-					<string>%POLICY_CATEGORY%</string>
 				</dict>
 				<key>Processor</key>
 				<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
