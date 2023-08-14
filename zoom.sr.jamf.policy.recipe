@@ -18,6 +18,10 @@
 		<string>Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
+		<key>PKG_NAME</key>
+		<string>zoom.us.pkg</string>
+		<key>POLICY_RUN_COMMAND</key>
+		<string>/usr/local/bin/zoom</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.3</string>
@@ -49,9 +53,15 @@
 				<key>policy_name</key>
 				<string>%POLICY_NAME%</string>
 				<key>policy_template</key>
-				<string>Policy_Test.xml</string>
+				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
 				<string>True</string>
+				<key>pkg_name</key>
+				<string>%PKG_NAME%</string>
+				<key>policy_category</key>
+				<string>%POLICY_CATEGORY%</string>
+				<key>policy_run_command</key>
+				<string>%POLICY_RUN_COMMAND%</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
