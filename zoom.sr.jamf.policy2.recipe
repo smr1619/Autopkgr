@@ -42,11 +42,11 @@
             <key>Arguments</key>
             <dict>
                 <key>policy_name</key>
-                <string>Update Zoom</string>
-                <key>policy_template</key>
-                <string>Policy_Test.xml</string>
-                <key>replace_policy</key>
-                <string>True</string>
+        <string>Update Zoom</string>
+        <key>policy_template</key>
+        <string>Policy_Test.xml</string>
+        <key>replace_policy</key>
+        <string>True</string>
             </dict>
             <key>Processor</key>
             <string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
