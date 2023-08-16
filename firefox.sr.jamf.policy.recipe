@@ -26,11 +26,9 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>%SITE% %NAME% Latest</string>
+		<string>Update Firefox</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
-		<key>SITE</key>
-		<string>LPL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.0</string>
