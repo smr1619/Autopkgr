@@ -65,6 +65,8 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
 				<string>True</string>
+				<key>update_package</key>
+        			<string>True</string>
 			</dict>
 		</dict>
 	</array>
