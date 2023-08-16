@@ -1,4 +1,4 @@
-?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
@@ -22,13 +22,15 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>CATEGORY</key>
 		<string>Browsers</string>
 		<key>GROUP_NAME</key>
-		<string>Monthly Patching - Mozilla Firefox Update</string>
+		<string>Update Zoom</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>Update Firefox</string>
+		<string>%SITE% %NAME% Latest</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
+		<key>SITE</key>
+		<string>LPL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.0</string>
@@ -65,8 +67,6 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
 				<string>True</string>
-				<key>update_package</key>
-        			<string>True</string>
 			</dict>
 		</dict>
 	</array>
