@@ -16,7 +16,7 @@ must each exist on the server, otherwise the recipe will fail. Values for SITE a
 requested in the Input dictionary so that they may be used within the POLICY_TEMPLATE specified.
 </string>
 	<key>Identifier</key>
-	<string>com.github.firefox.sr.jamf.policy.recipe</string>
+	<string>com.github.smr1619.firefox.sr.jamf.policy.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
