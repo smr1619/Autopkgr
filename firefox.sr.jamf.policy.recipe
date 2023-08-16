@@ -20,17 +20,15 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Browsers</string>
+		<string>Autopkgr_Uploads</string>
 		<key>GROUP_NAME</key>
-		<string>Update Zoom</string>
+		<string>Monthly Patching - Mozilla Firefox Update</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>%SITE% %NAME% Latest</string>
+		<string>%NAME% Update Firefox</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
-		<key>SITE</key>
-		<string>LPL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.0</string>
