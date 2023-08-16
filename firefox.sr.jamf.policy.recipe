@@ -35,7 +35,7 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 	<key>MinimumVersion</key>
 	<string>2.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.autopkg.download.FirefoxSignedPkg</string>
+	<string>com.github.rtrouton.pkg.Firefox</string>
 	<key>Process</key>
 	<array>
 		<dict>
