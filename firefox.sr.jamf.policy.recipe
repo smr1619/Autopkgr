@@ -16,21 +16,21 @@ must each exist on the server, otherwise the recipe will fail. Values for SITE a
 requested in the Input dictionary so that they may be used within the POLICY_TEMPLATE specified.
 </string>
 	<key>Identifier</key>
-	<string>com.github.jazzace.jamf.FirefoxSignedPkg-latest</string>
+	<string>com.github.smr1619.firefox.sr.jamf.policy.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
 		<string>Browsers</string>
 		<key>GROUP_NAME</key>
-		<string>IAML Both Labs</string>
+		<string>Update Zoom</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
 		<string>%SITE% %NAME% Latest</string>
 		<key>POLICY_TEMPLATE</key>
-		<string>Policy-install-latest-site-group.xml</string>
+		<string>Policy_Test.xml</string>
 		<key>SITE</key>
-		<string>IAML</string>
+		<string>LPL</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>2.0</string>
