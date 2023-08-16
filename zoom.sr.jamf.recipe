@@ -37,6 +37,21 @@
 			<key>Processor</key>
 			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>policy_category</key>
+				<string>%CATEGORY%</string>
+				<key>policy_name</key>
+				<string>Update Zoom</string>
+				<key>policy_template</key>
+				<string>Policy_Test.xml</string>
+				<key>policy_scope</key>
+				<string>Monthly Patching - Zoom Update</string>
+			</dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+		</dict>
 	</array>
 </dict>
 </plist>
