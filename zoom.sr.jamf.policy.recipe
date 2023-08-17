@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>Recipe automatically generated from com.github.rtrouton.jss.Firefox by JamfRecipeMaker</string>
+	<string>Recipe to update Zoom policy in Jamf Pro</string>
 	<key>Identifier</key>
-	<string>com.github.smr1619.zoom.sr.jamf.recipe</string>
+	<string>com.example.zoom.sr.jamf.policy.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -20,35 +20,35 @@
 	<key>Process</key>
 	<array>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%CATEGORY%</string>
-			</dict>
 			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-		</dict>
-		<dict>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 			<key>Arguments</key>
 			<dict>
 				<key>pkg_category</key>
 				<string>%CATEGORY%</string>
 			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
 		</dict>
 		<dict>
+			<key>Processor</key>
+			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUpdater</string>
 			<key>Arguments</key>
 			<dict>
-				<key>policy_name</key>
-				<string>Update Zoom</string>
-				<key>policy_template</key>
-				<string>Policy_Test.xml</string>
-				<key>replace_policy</key>
-				<string>True</string>
+				<key>policy_id</key>
+				<string>%jamf_policy_id%</string>
+				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+				<key>pkg_name</key>
+				<string>Zoom.pkg</string>
+				<key>pkg_version_comparison_key</key>
+				<string>version</string>
+				<key>pkg_version_comparison</key>
+				<string>greater_than</string>
 			</dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyUploader</string>
+			<key>Input</key>
+			<dict>
+				<key>CATEGORY</key>
+				<string>%pkg_category%</string>
+			</dict>
 		</dict>
 	</array>
 </dict>
