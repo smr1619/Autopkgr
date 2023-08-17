@@ -26,7 +26,7 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>Update Zoom</string>
+		<string>%NAME% Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
