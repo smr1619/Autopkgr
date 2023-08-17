@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>This recipe downloads Zoom, packages it, then uploads the pkg to your Jamf Pro Server/Distribution Point 
+	<string>This recipe downloads _____, packages it, then uploads the pkg to your Jamf Pro Server/Distribution Point 
 and creates/updates the policy that deploys it.
 
 The server/share details must be set using variables set in the environment or specified in your override
@@ -65,38 +65,6 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
 				<string>True</string>
-			</dict>
-			<key>Input</key>
-			<dict>
-				<key>CATEGORY</key>
-				<string>%POLICY_CATEGORY%</string>
-				<key>GROUP_NAME</key>
-				<string>%GROUP_NAME%</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfPolicyAddPackage</string>
-			<key>Arguments</key>
-			<dict>
-				<key>pkg_name</key>
-				<string>%NAME%</string>
-				<key>pkg_category</key>
-				<string>%CATEGORY%</string>
-			</dict>
-			<key>Input</key>
-			<dict>
-				<key>CATEGORY</key>
-				<string>%CATEGORY%</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Processor</key>
-			<string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
-			<key>Arguments</key>
-			<dict>
-				<key>category_name</key>
-				<string>%CATEGORY%</string>
 			</dict>
 		</dict>
 	</array>
