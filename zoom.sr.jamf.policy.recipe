@@ -30,7 +30,7 @@
 		</dict>
 		<dict>
 			<key>Processor</key>
-			<string><string>/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfPolicyUpdater/JamfPolicyUploader.py</string>
+			<string><string>~/Library/AutoPkg/RecipeRepos/com.github.autopkg.grahampugh-recipes/JamfPolicyUpdater/JamfPolicyUploader.py</string>
 			<key>Arguments</key>
 			<dict>
 				<key>policy_id</key>
