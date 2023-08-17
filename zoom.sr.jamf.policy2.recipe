@@ -16,7 +16,7 @@ must each exist on the server, otherwise the recipe will fail. Values for SITE a
 requested in the Input dictionary so that they may be used within the POLICY_TEMPLATE specified.
 </string>
 	<key>Identifier</key>
-	<string>com.github.smr1619.zoom.sr.policy2.jamf.recipe</string>
+	<string>com.github.smr1619.zoom.sr.policy.jamf.recipe</string>
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
@@ -26,7 +26,7 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>Update Zoom</string>
+		<string>%NAME% Update Zoom</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
@@ -82,6 +82,11 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 				<key>pkg_name</key>
 				<string>%NAME%</string>
 				<key>pkg_category</key>
+				<string>%CATEGORY%</string>
+			</dict>
+			<key>Input</key>
+			<dict>
+				<key>CATEGORY</key>
 				<string>%CATEGORY%</string>
 			</dict>
 		</dict>
