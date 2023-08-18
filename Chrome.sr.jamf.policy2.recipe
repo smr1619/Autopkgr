@@ -20,7 +20,7 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>1-Monthly_Patching</string>
+		<string>1_Monthly_Patching</string>
 		<key>GROUP_NAME</key>
 		<string>Monthly Patching - Google Chrome Update</string>
 		<key>POLICY_CATEGORY</key>
