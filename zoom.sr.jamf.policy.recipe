@@ -22,11 +22,11 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>CATEGORY</key>
 		<string>Autopkgr_Uploads</string>
 		<key>GROUP_NAME</key>
-		<string>Monthly Patching - Zoom Update</string>
+		<string>Monthly Patching - Microsoft Teams Update</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>ZoomTest</string>
+		<string>TeamsTest</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
