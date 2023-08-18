@@ -61,7 +61,7 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 			<dict>
 				<key>policy_name</key>
 				<string>%POLICY_NAME%</string>
-				<key>policy_template</key>
+				<key>Update_Zoom</key>
 				<string>%POLICY_TEMPLATE%</string>
 				<key>replace_policy</key>
 				<string>True</string>
