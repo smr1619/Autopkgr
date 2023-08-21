@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>This recipe downloads the pkg installer for Firefox, then uploads the pkg to your Jamf Pro Server/Distribution Point 
+	<string>This recipe downloads _____, packages it, then uploads the pkg to your Jamf Pro Server/Distribution Point 
 and creates/updates the policy that deploys it.
 
 The server/share details must be set using variables set in the environment or specified in your override
@@ -20,13 +20,13 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Autopkgr_Uploads</string>
+		<string>1_Monthly_Patching</string>
 		<key>GROUP_NAME</key>
 		<string>Monthly Patching - Mozilla Firefox Update</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>%NAME% Update Firefox</string>
+		<string>Update Firefox</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
