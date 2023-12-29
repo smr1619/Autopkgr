@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>CATEGORY</key>
-		<string>Autopkgr_Uploads</string>
+		<string>1_Monthly_Patching</string>
 		<key>NAME</key>
 		<string>Google Chrome</string>
 	</dict>
