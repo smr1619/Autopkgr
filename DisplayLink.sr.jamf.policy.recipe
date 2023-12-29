@@ -22,11 +22,11 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>CATEGORY</key>
 		<string>1_Monthly_Patching</string>
 		<key>GROUP_NAME</key>
-		<string>Monthly Patching - DisplayLinkManager Update</string>
+		<string>Monthly Patching - DisplayLink Manager Update</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
-		<string>Update DisplayLinkManager</string>
+		<string>Update DisplayLink</string>
 		<key>POLICY_TEMPLATE</key>
 		<string>Policy_Test.xml</string>
 	</dict>
