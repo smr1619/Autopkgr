@@ -22,7 +22,7 @@ requested in the Input dictionary so that they may be used within the POLICY_TEM
 		<key>CATEGORY</key>
 		<string>1_Monthly_Patching</string>
 		<key>GROUP_NAME</key>
-		<string>Monthly Patching - Mozilla Firefox Update</string>
+		<string>Monthly Patching - Mozilla Firefox Update - A</string>
 		<key>POLICY_CATEGORY</key>
 		<string>%CATEGORY%</string>
 		<key>POLICY_NAME</key>
